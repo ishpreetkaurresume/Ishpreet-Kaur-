@@ -1,47 +1,53 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Ishpreet Kaur | Dispatch Executive</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-/* =========================
+/* =====================================================
    GLOBAL
-========================= */
+===================================================== */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     background: #0f172a;
     color: white;
 }
 
 
-/* =========================
+/* =====================================================
    HERO SECTION
-========================= */
+===================================================== */
 
 .hero {
+
     min-height: 100vh;
 
     background:
-        linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)),
+        linear-gradient(
+            rgba(0,0,0,0.60),
+            rgba(0,0,0,0.68)
+        ),
         url("IMG_4996.jpeg");
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     display: flex;
     align-items: center;
@@ -50,90 +56,125 @@ body {
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: 750px;
 }
 
 .hero h1 {
+
     font-size: 70px;
+
     font-weight: 700;
+
     line-height: 1.1;
+
+    letter-spacing: -1px;
 }
 
 .hero h2 {
-    margin-top: 10px;
+
+    margin-top: 12px;
+
     font-size: 28px;
+
     font-weight: 500;
+
     color: #d1d5db;
 }
 
 .hero p {
+
     margin-top: 25px;
+
     font-size: 18px;
+
     line-height: 1.8;
+
     color: #f3f4f6;
 }
 
 
-/* =========================
+/* =====================================================
    BUTTONS
-========================= */
+===================================================== */
 
 .buttons {
+
     margin-top: 35px;
+
     display: flex;
+
     gap: 20px;
 }
 
 .btn {
+
     padding: 15px 35px;
+
     border-radius: 40px;
+
     text-decoration: none;
+
     font-weight: 600;
-    transition: .3s;
+
     display: inline-block;
+
+    transition: 0.3s;
 }
 
 .primary {
+
     background: #f59e0b;
-    color: black;
+
+    color: #000;
 }
 
 .secondary {
+
     border: 2px solid white;
+
     color: white;
 }
 
 .btn:hover {
+
     transform: translateY(-3px);
 }
 
 
-/* =========================
+/* =====================================================
    GENERAL SECTIONS
-========================= */
+===================================================== */
 
 section {
+
     padding: 90px 10%;
 }
 
 .title {
+
     font-size: 40px;
+
     margin-bottom: 40px;
+
     text-align: center;
+
+    font-weight: 700;
 }
 
 
-/* =========================
-   CARDS
-========================= */
+/* =====================================================
+   CARD
+===================================================== */
 
 .card {
-    background: rgba(255,255,255,.08);
+
+    background: rgba(255,255,255,0.08);
 
     backdrop-filter: blur(16px);
+
     -webkit-backdrop-filter: blur(16px);
 
-    border: 1px solid rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,0.12);
 
     border-radius: 20px;
 
@@ -143,55 +184,68 @@ section {
 }
 
 .card h3 {
+
     margin-bottom: 15px;
+
     font-size: 26px;
 }
 
 .card p {
+
     line-height: 1.9;
+
     color: #d6d6d6;
 }
 
 
-/* =========================
+/* =====================================================
    ABOUT ME SECTION
-========================= */
+===================================================== */
 
 .about-section {
+
     position: relative;
 
     background:
         linear-gradient(
-            rgba(0,0,0,.55),
-            rgba(0,0,0,.70)
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.72)
         ),
         url("about-bg.JPG");
 
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
 }
 
 .about-section .title {
+
     position: relative;
+
     z-index: 2;
+
     color: white;
 }
 
 .about-section .card {
+
     position: relative;
+
     z-index: 2;
 
     max-width: 900px;
 
     margin: 0 auto;
 
-    background: rgba(0,0,0,.48);
+    background: rgba(0,0,0,0.48);
 
     backdrop-filter: blur(12px);
+
     -webkit-backdrop-filter: blur(12px);
 
-    border: 1px solid rgba(255,255,255,.18);
+    border: 1px solid rgba(255,255,255,0.18);
 
     border-radius: 20px;
 
@@ -199,147 +253,185 @@ section {
 }
 
 .about-section .card p {
+
     color: #f3f4f6;
+
     font-size: 17px;
+
     line-height: 1.9;
 }
 
 
-/* =========================
+/* =====================================================
    PROFESSIONAL EXPERIENCE
-========================= */
+   FULL BACKGROUND IMAGE
+===================================================== */
 
 .experience-section {
+
     position: relative;
 
-    background:
+    min-height: 700px;
+
+    background-image:
+
         linear-gradient(
-            rgba(0,0,0,.55),
-            rgba(0,0,0,.72)
+            rgba(0,0,0,0.52),
+            rgba(0,0,0,0.75)
         ),
+
         url("292E61D8-D64D-4358-A22D-4BA916015320.jpeg");
 
     background-size: cover;
-    background-position: center;
+
+    background-position: center center;
+
     background-repeat: no-repeat;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
 
     overflow: hidden;
 }
 
+
+/* EXPERIENCE TITLE */
+
 .experience-section .title {
+
     position: relative;
+
     z-index: 2;
+
     color: white;
+
+    margin-bottom: 45px;
 }
 
 
 /* EXPERIENCE CONTAINER */
 
 .experience-container {
+
     position: relative;
+
     z-index: 2;
 
-    max-width: 1100px;
+    width: 100%;
+
+    max-width: 950px;
 
     margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 35px;
-
-    align-items: center;
-}
-
-
-/* EXPERIENCE IMAGE */
-
-.experience-image {
-    width: 100%;
-    height: 450px;
-
-    border-radius: 20px;
-
-    overflow: hidden;
-
-    border: 1px solid rgba(255,255,255,.18);
-
-    box-shadow: 0 20px 50px rgba(0,0,0,.45);
-}
-
-.experience-image img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition: .5s;
-}
-
-.experience-image:hover img {
-    transform: scale(1.04);
 }
 
 
 /* EXPERIENCE CARD */
 
 .experience-container .card {
+
+    width: 100%;
+
     margin: 0;
 
-    max-width: none;
+    padding: 42px;
 
-    background: rgba(0,0,0,.45);
+    background:
+
+        rgba(0,0,0,0.55);
 
     backdrop-filter: blur(12px);
 
     -webkit-backdrop-filter: blur(12px);
 
-    border: 1px solid rgba(255,255,255,.18);
+    border:
 
-    border-radius: 20px;
+        1px solid rgba(255,255,255,0.25);
 
-    padding: 35px;
+    border-radius: 22px;
+
+    box-shadow:
+
+        0 25px 60px rgba(0,0,0,0.45);
 }
+
+
+/* JOB TITLE */
 
 .experience-container .card h3 {
+
     color: white;
-    margin-bottom: 15px;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
 }
 
+
+/* COMPANY */
+
 .experience-container .card p {
-    color: #f3f4f6;
-    line-height: 1.9;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* EXPERIENCE LIST */
+
+.experience-container .card ul {
+
+    margin-top: 5px;
+
+    padding-left: 22px;
 }
 
 .experience-container .card li {
+
     color: #f3f4f6;
 
-    margin: 10px 0;
+    margin: 12px 0;
 
     line-height: 1.7;
+
+    font-size: 16px;
 }
 
 
-/* =========================
+/* =====================================================
    SKILLS
-========================= */
+===================================================== */
+
+.skills-section {
+
+    background: #111827;
+}
 
 .grid {
+
     display: grid;
 
     grid-template-columns:
-        repeat(auto-fit, minmax(250px, 1fr));
+        repeat(
+            auto-fit,
+            minmax(250px,1fr)
+        );
 
     gap: 25px;
 }
 
 .skill {
-    padding: 20px;
 
-    background: rgba(255,255,255,.07);
+    padding: 22px;
+
+    background: rgba(255,255,255,0.07);
+
+    border: 1px solid rgba(255,255,255,0.08);
 
     border-radius: 15px;
 
@@ -347,58 +439,66 @@ section {
 
     font-weight: 600;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .skill:hover {
+
     transform: translateY(-5px);
 
-    background: rgba(255,255,255,.12);
+    background: rgba(255,255,255,0.12);
 }
 
 
-/* =========================
+/* =====================================================
    EDUCATION
-========================= */
+===================================================== */
 
 .education-section {
-    background: #111827;
+
+    background: #0f172a;
 }
 
 .education-card {
+
     max-width: 900px;
 
     margin: 0 auto;
 
-    background: rgba(255,255,255,.08);
+    padding: 38px;
+
+    background: rgba(255,255,255,0.08);
 
     backdrop-filter: blur(16px);
 
     -webkit-backdrop-filter: blur(16px);
 
-    border: 1px solid rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,0.12);
 
     border-radius: 20px;
-
-    padding: 35px;
 }
 
 .education-card h3 {
+
     margin-bottom: 10px;
+
+    font-size: 24px;
 }
 
 .education-card p {
+
     color: #d1d5db;
 
     line-height: 1.8;
 }
 
 
-/* =========================
+/* =====================================================
    FOOTER
-========================= */
+===================================================== */
 
 footer {
+
     padding: 60px 10%;
 
     text-align: center;
@@ -407,47 +507,108 @@ footer {
 }
 
 footer h2 {
+
     margin-bottom: 20px;
+
+    font-size: 30px;
 }
 
 footer p {
+
     margin: 8px 0;
 
     color: #d1d5db;
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* =====================================================
+   TABLET
+===================================================== */
 
-@media(max-width: 768px) {
+@media(max-width: 900px) {
 
     .hero {
+
         padding: 80px 7%;
     }
 
     .hero h1 {
+
+        font-size: 55px;
+    }
+
+    .experience-section {
+
+        min-height: 650px;
+
+        background-position: center;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width: 768px) {
+
+    section {
+
+        padding: 70px 7%;
+    }
+
+
+    /* HERO */
+
+    .hero {
+
+        min-height: 100vh;
+
+        padding: 70px 7%;
+
+        background-position: center;
+    }
+
+    .hero h1 {
+
         font-size: 46px;
     }
 
     .hero h2 {
+
         font-size: 22px;
     }
 
     .hero p {
+
         font-size: 16px;
+
+        line-height: 1.8;
     }
 
+
+    /* BUTTONS */
+
     .buttons {
+
         flex-direction: column;
+
+        gap: 15px;
     }
 
     .btn {
+
         text-align: center;
+
+        width: 100%;
     }
 
+
+    /* TITLES */
+
     .title {
+
         font-size: 32px;
     }
 
@@ -455,55 +616,79 @@ footer p {
     /* ABOUT */
 
     .about-section {
+
         padding: 70px 7%;
 
-        background-position: center center;
+        background-position: center;
     }
 
     .about-section .card {
+
         padding: 28px 22px;
     }
 
     .about-section .card p {
+
         font-size: 15px;
 
         line-height: 1.8;
     }
 
 
-    /* EXPERIENCE */
+    /* =================================================
+       PROFESSIONAL EXPERIENCE MOBILE
+    ================================================= */
 
     .experience-section {
-        padding: 70px 7%;
+
+        min-height: auto;
+
+        padding: 80px 7%;
 
         background-position: center center;
     }
 
-    .experience-container {
-        grid-template-columns: 1fr;
+    .experience-section .title {
 
-        gap: 25px;
+        margin-bottom: 30px;
     }
 
-    .experience-image {
-        height: 320px;
+    .experience-container {
+
+        width: 100%;
     }
 
     .experience-container .card {
+
         padding: 28px 22px;
+
+        border-radius: 18px;
     }
 
-    .experience-container .card p,
+    .experience-container .card h3 {
+
+        font-size: 24px;
+    }
+
+    .experience-container .card p {
+
+        font-size: 15px;
+    }
+
     .experience-container .card li {
+
         font-size: 15px;
 
         line-height: 1.8;
+
+        margin: 10px 0;
     }
 
 
     /* SKILLS */
 
     .grid {
+
         grid-template-columns: 1fr;
     }
 
@@ -511,52 +696,88 @@ footer p {
     /* EDUCATION */
 
     .education-card {
+
         padding: 28px 22px;
     }
 
 }
 
 
-/* =========================
-   EXTRA SMALL DEVICES
-========================= */
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
 
 @media(max-width: 480px) {
 
     .hero h1 {
+
         font-size: 38px;
     }
 
     .hero h2 {
+
         font-size: 19px;
     }
 
     .hero p {
+
         font-size: 15px;
     }
 
-    .experience-image {
-        height: 260px;
+    .experience-section {
+
+        padding: 70px 6%;
+    }
+
+    .experience-container .card {
+
+        padding: 25px 20px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY LARGE SCREENS
+===================================================== */
+
+@media(min-width: 1600px) {
+
+    .hero {
+
+        padding-left: 15%;
+
+        padding-right: 15%;
+    }
+
+    section {
+
+        padding-left: 15%;
+
+        padding-right: 15%;
     }
 
 }
 
 </style>
+
 </head>
 
 
 <body>
 
 
-<!-- =========================
+<!-- =====================================================
      HERO
-========================= -->
+===================================================== -->
 
 <section class="hero">
 
     <div class="hero-content">
 
-        <h1>Ishpreet Kaur</h1>
+        <h1>
+            Ishpreet Kaur
+        </h1>
 
         <h2>
             Dispatch Executive • Operations Coordinator
@@ -569,6 +790,7 @@ footer p {
             Looking for an opportunity to grow in the logistics and dispatch
             industry.
         </p>
+
 
         <div class="buttons">
 
@@ -587,15 +809,17 @@ footer p {
 </section>
 
 
-<!-- =========================
+
+<!-- =====================================================
      ABOUT ME
-========================= -->
+===================================================== -->
 
 <section class="about-section">
 
     <h2 class="title">
         About Me
     </h2>
+
 
     <div class="card">
 
@@ -624,9 +848,14 @@ footer p {
 </section>
 
 
-<!-- =========================
+
+<!-- =====================================================
      PROFESSIONAL EXPERIENCE
-========================= -->
+     
+     IMPORTANT:
+     The image is used ONLY as the BACKGROUND.
+     There is NO <img> tag here.
+===================================================== -->
 
 <section class="experience-section">
 
@@ -637,21 +866,6 @@ footer p {
 
     <div class="experience-container">
 
-
-        <!-- IMAGE -->
-
-        <div class="experience-image">
-
-            <img
-                src="292E61D8-D64D-4358-A22D-4BA916015320.jpeg"
-                alt="Ishpreet Kaur Professional Experience"
-            >
-
-        </div>
-
-
-        <!-- EXPERIENCE DETAILS -->
-
         <div class="card">
 
             <h3>
@@ -659,10 +873,14 @@ footer p {
             </h3>
 
             <p>
-                <strong>Rai Arts, Mullanpur</strong>
+                <strong>
+                    Rai Arts, Mullanpur
+                </strong>
             </p>
 
+
             <br>
+
 
             <ul>
 
@@ -703,15 +921,17 @@ footer p {
 </section>
 
 
-<!-- =========================
-     SKILLS
-========================= -->
 
-<section>
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section class="skills-section">
 
     <h2 class="title">
         Skills
     </h2>
+
 
     <div class="grid">
 
@@ -756,15 +976,17 @@ footer p {
 </section>
 
 
-<!-- =========================
+
+<!-- =====================================================
      EDUCATION
-========================= -->
+===================================================== -->
 
 <section class="education-section">
 
     <h2 class="title">
         Education
     </h2>
+
 
     <div class="education-card">
 
@@ -776,7 +998,9 @@ footer p {
             Lovely Professional University (LPU)
         </p>
 
+
         <br><br>
+
 
         <h3>
             Senior Secondary (+2)
@@ -786,14 +1010,17 @@ footer p {
             St. Martha Bethany Vidyalaya, Rurka Kalan
         </p>
 
+
         <br><br>
+
 
         <h3>
             Basic Computer Course
         </h3>
 
         <p>
-            Basic computer operations, documentation and office applications.
+            Basic computer operations, documentation
+            and office applications.
         </p>
 
     </div>
@@ -801,9 +1028,10 @@ footer p {
 </section>
 
 
-<!-- =========================
+
+<!-- =====================================================
      CONTACT
-========================= -->
+===================================================== -->
 
 <footer id="contact">
 
@@ -831,22 +1059,5 @@ footer p {
 
 
 </body>
+
 </html>
-```
-
-### 📁 Keep these files together
-
-Your GitHub repository/folder should contain:
-
-```text
-📁 Your Website
-│
-├── index.html
-├── IMG_4996.jpeg
-├── about-bg.JPG
-└── 292E61D8-D64D-4358-A22D-4BA916015320.jpeg
-```
-
-The **292E61...jpeg** image now appears as a proper large professional image beside your experience details, and the section also uses it as its background.
-
-**One important correction:** your original HTML displayed your email address, while your earlier resume information indicated you wanted the email removed. If this website is intended to match that resume, I would remove the email from the footer as well.
