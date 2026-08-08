@@ -163,7 +163,7 @@ section {
 
 
 /* =====================================================
-   CARD
+   GENERAL CARD
 ===================================================== */
 
 .card {
@@ -276,11 +276,11 @@ section {
     background-image:
 
         linear-gradient(
-            rgba(0,0,0,0.52),
-            rgba(0,0,0,0.75)
+            rgba(0,0,0,0.48),
+            rgba(0,0,0,0.74)
         ),
 
-        url("292E61D8-D64D-4358-A22D-4BA916015320.JPG");
+        url("292E61D8-D64D-4358-A22D-4BA916015320.jpeg");
 
     background-size: cover;
 
@@ -338,22 +338,17 @@ section {
 
     padding: 42px;
 
-    background:
-
-        rgba(0,0,0,0.55);
+    background: rgba(0,0,0,0.55);
 
     backdrop-filter: blur(12px);
 
     -webkit-backdrop-filter: blur(12px);
 
-    border:
-
-        1px solid rgba(255,255,255,0.25);
+    border: 1px solid rgba(255,255,255,0.25);
 
     border-radius: 22px;
 
     box-shadow:
-
         0 25px 60px rgba(0,0,0,0.45);
 }
 
@@ -404,25 +399,23 @@ section {
 
 
 /* =====================================================
-   SKILLS
+   SKILLS SECTION
+   FULL FOREST BACKGROUND
 ===================================================== */
 
-.<!-- =========================
-     SKILLS SECTION
-========================= -->
-
-<style>
-
 .skills-section {
+
     position: relative;
 
     min-height: 700px;
 
     background-image:
+
         linear-gradient(
-            rgba(0, 0, 0, 0.40),
-            rgba(0, 0, 0, 0.72)
+            rgba(0,0,0,0.40),
+            rgba(0,0,0,0.72)
         ),
+
         url("skills-bg.png");
 
     background-size: cover;
@@ -444,6 +437,7 @@ section {
 /* SKILLS TITLE */
 
 .skills-section .title {
+
     position: relative;
 
     z-index: 2;
@@ -452,11 +446,10 @@ section {
 
     font-size: 40px;
 
-    text-align: center;
-
     margin-bottom: 45px;
 
-    text-shadow: 0 3px 15px rgba(0,0,0,0.8);
+    text-shadow:
+        0 3px 15px rgba(0,0,0,0.8);
 }
 
 
@@ -476,7 +469,8 @@ section {
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:
+        repeat(3, 1fr);
 
     gap: 20px;
 }
@@ -513,7 +507,7 @@ section {
 }
 
 
-/* HOVER */
+/* SKILL HOVER */
 
 .skills-section .skill:hover {
 
@@ -521,117 +515,12 @@ section {
 
     background: rgba(0,0,0,0.65);
 
-    border-color: rgba(255,255,255,0.5);
+    border-color:
+        rgba(255,255,255,0.5);
 
     box-shadow:
         0 18px 40px rgba(0,0,0,0.5);
 }
-
-
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 900px) {
-
-    .skills-section .grid {
-
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 600px) {
-
-    .skills-section {
-
-        min-height: auto;
-
-        padding: 80px 7%;
-
-        background-position: center center;
-    }
-
-    .skills-section .title {
-
-        font-size: 32px;
-
-        margin-bottom: 30px;
-    }
-
-    .skills-section .grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-    }
-
-    .skills-section .skill {
-
-        padding: 20px;
-
-        font-size: 15px;
-    }
-
-}
-
-</style>
-
-
-<section class="skills-section">
-
-    <h2 class="title">
-        Skills
-    </h2>
-
-
-    <div class="grid">
-
-        <div class="skill">
-            Dispatch Coordination
-        </div>
-
-        <div class="skill">
-            Order Management
-        </div>
-
-        <div class="skill">
-            Documentation
-        </div>
-
-        <div class="skill">
-            Adobe Photoshop
-        </div>
-
-        <div class="skill">
-            CorelDRAW
-        </div>
-
-        <div class="skill">
-            Microsoft Word
-        </div>
-
-        <div class="skill">
-            Basic Microsoft Excel
-        </div>
-
-        <div class="skill">
-            Team Collaboration
-        </div>
-
-        <div class="skill">
-            Customer Communication
-        </div>
-
-    </div>
-
-</section>
 
 
 /* =====================================================
@@ -709,7 +598,7 @@ footer p {
    TABLET
 ===================================================== */
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
 
     .hero {
 
@@ -721,11 +610,10 @@ footer p {
         font-size: 55px;
     }
 
-    .experience-section {
+    .skills-section .grid {
 
-        min-height: 650px;
-
-        background-position: center;
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
 }
@@ -735,7 +623,7 @@ footer p {
    MOBILE
 ===================================================== */
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
 
     section {
 
@@ -819,9 +707,7 @@ footer p {
     }
 
 
-    /* =================================================
-       PROFESSIONAL EXPERIENCE MOBILE
-    ================================================= */
+    /* EXPERIENCE */
 
     .experience-section {
 
@@ -869,11 +755,38 @@ footer p {
     }
 
 
-    /* SKILLS */
+    /* =================================================
+       SKILLS MOBILE
+    ================================================= */
 
-    .grid {
+    .skills-section {
+
+        min-height: auto;
+
+        padding: 80px 7%;
+
+        background-position: center center;
+    }
+
+    .skills-section .title {
+
+        font-size: 32px;
+
+        margin-bottom: 30px;
+    }
+
+    .skills-section .grid {
 
         grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .skills-section .skill {
+
+        padding: 20px;
+
+        font-size: 15px;
     }
 
 
@@ -891,7 +804,7 @@ footer p {
    SMALL MOBILE
 ===================================================== */
 
-@media(max-width: 480px) {
+@media (max-width: 480px) {
 
     .hero h1 {
 
@@ -918,14 +831,19 @@ footer p {
         padding: 25px 20px;
     }
 
+    .skills-section {
+
+        padding: 70px 6%;
+    }
+
 }
 
 
 /* =====================================================
-   VERY LARGE SCREENS
+   LARGE SCREENS
 ===================================================== */
 
-@media(min-width: 1600px) {
+@media (min-width: 1600px) {
 
     .hero {
 
@@ -1035,10 +953,6 @@ footer p {
 
 <!-- =====================================================
      PROFESSIONAL EXPERIENCE
-     
-     IMPORTANT:
-     The image is used ONLY as the BACKGROUND.
-     There is NO <img> tag here.
 ===================================================== -->
 
 <section class="experience-section">
