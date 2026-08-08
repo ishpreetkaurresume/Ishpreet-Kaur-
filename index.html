@@ -3,912 +3,771 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ishpreet Kaur | Dispatch Executive</title>
+    <title>Ishpreet Kaur | Dispatch Executive</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
+    <style>
 
-<style>
+        /* =====================================================
+           GLOBAL
+        ===================================================== */
 
-/* =====================================================
-   GLOBAL
-===================================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0f172a;
+            color: white;
+        }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #0f172a;
-    color: white;
-}
 
+        /* =====================================================
+           HERO
+        ===================================================== */
 
-/* =====================================================
-   HERO
-===================================================== */
+        .hero {
+            min-height: 100vh;
 
-.hero {
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.60),
+                    rgba(0,0,0,0.68)
+                ),
+                url("IMG_4996.jpeg");
 
-    min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
 
-    background:
-        linear-gradient(
-            rgba(0,0,0,0.60),
-            rgba(0,0,0,0.68)
-        ),
-        url("IMG_4996.jpeg");
+            display: flex;
+            align-items: center;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+            padding: 0 10%;
+        }
 
-    display: flex;
-    align-items: center;
+        .hero-content {
+            max-width: 750px;
+        }
 
-    padding: 0 10%;
-}
+        .hero h1 {
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
 
-.hero-content {
-    max-width: 750px;
-}
+        .hero h2 {
+            margin-top: 12px;
+            font-size: 28px;
+            font-weight: 500;
+            color: #d1d5db;
+        }
 
-.hero h1 {
+        .hero p {
+            margin-top: 25px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #f3f4f6;
+        }
 
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -1px;
-}
 
-.hero h2 {
+        /* =====================================================
+           BUTTONS
+        ===================================================== */
 
-    margin-top: 12px;
-    font-size: 28px;
-    font-weight: 500;
-    color: #d1d5db;
-}
+        .buttons {
+            margin-top: 35px;
 
-.hero p {
+            display: flex;
 
-    margin-top: 25px;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #f3f4f6;
-}
+            gap: 20px;
+        }
 
+        .btn {
+            padding: 15px 35px;
 
-/* =====================================================
-   BUTTONS
-===================================================== */
+            border-radius: 40px;
 
-.buttons {
+            text-decoration: none;
 
-    margin-top: 35px;
+            font-weight: 600;
 
-    display: flex;
+            display: inline-block;
 
-    gap: 20px;
-}
+            transition: 0.3s;
 
-.btn {
+            cursor: pointer;
+        }
 
-    padding: 15px 35px;
+        .primary {
+            background: #f59e0b;
+            color: #000;
+        }
 
-    border-radius: 40px;
+        .secondary {
+            border: 2px solid white;
+            color: white;
+        }
 
-    text-decoration: none;
+        .btn:hover {
+            transform: translateY(-3px);
+        }
 
-    font-weight: 600;
+        .primary:hover {
+            background: #fbbf24;
+        }
 
-    display: inline-block;
+        .secondary:hover {
+            background: white;
+            color: #000;
+        }
 
-    transition: 0.3s;
-}
 
-.primary {
+        /* =====================================================
+           GENERAL SECTIONS
+        ===================================================== */
 
-    background: #f59e0b;
+        section {
+            padding: 90px 10%;
+        }
 
-    color: #000;
-}
+        .title {
+            font-size: 40px;
+            margin-bottom: 45px;
+            text-align: center;
+            font-weight: 700;
+            color: white;
 
-.secondary {
+            text-shadow:
+                0 3px 15px rgba(0,0,0,0.8);
+        }
 
-    border: 2px solid white;
 
-    color: white;
-}
+        /* =====================================================
+           ABOUT ME
+        ===================================================== */
 
-.btn:hover {
+        .about-section {
+            position: relative;
 
-    transform: translateY(-3px);
-}
+            min-height: 600px;
 
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.55),
+                    rgba(0,0,0,0.72)
+                ),
+                url("about-bg.JPG");
 
-/* =====================================================
-   GENERAL SECTIONS
-===================================================== */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
 
-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-    padding: 90px 10%;
-}
+        .about-section .card {
+            position: relative;
+            z-index: 2;
 
-.title {
+            max-width: 900px;
+            width: 100%;
 
-    font-size: 40px;
+            margin: 0 auto;
 
-    margin-bottom: 45px;
+            background: rgba(0,0,0,0.48);
 
-    text-align: center;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
 
-    font-weight: 700;
+            border: 1px solid rgba(255,255,255,0.18);
 
-    color: white;
+            border-radius: 22px;
 
-    text-shadow:
-        0 3px 15px rgba(0,0,0,0.8);
-}
+            padding: 40px;
 
+            box-shadow:
+                0 25px 60px rgba(0,0,0,0.40);
+        }
 
-/* =====================================================
-   ABOUT ME
-===================================================== */
+        .about-section .card p {
+            color: #f3f4f6;
 
-.about-section {
+            font-size: 17px;
 
-    position: relative;
+            line-height: 1.9;
+        }
 
-    min-height: 600px;
 
-    background:
-        linear-gradient(
-            rgba(0,0,0,0.55),
-            rgba(0,0,0,0.72)
-        ),
-        url("about-bg.JPG");
+        /* =====================================================
+           PROFESSIONAL EXPERIENCE
+        ===================================================== */
 
-    background-size: cover;
+        .experience-section {
+            position: relative;
 
-    background-position: center;
+            min-height: 700px;
 
-    background-repeat: no-repeat;
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,0.48),
+                    rgba(0,0,0,0.74)
+                ),
+                url("292E61D8-D64D-4358-A22D-4BA916015320.JPG");
 
-    display: flex;
+            background-size: cover;
 
-    flex-direction: column;
+            background-position: center center;
 
-    justify-content: center;
-}
+            background-repeat: no-repeat;
 
-.about-section .card {
+            display: flex;
 
-    position: relative;
+            flex-direction: column;
 
-    z-index: 2;
+            justify-content: center;
 
-    max-width: 900px;
+            overflow: hidden;
+        }
 
-    width: 100%;
+        .experience-container {
+            position: relative;
 
-    margin: 0 auto;
+            z-index: 2;
 
-    background: rgba(0,0,0,0.48);
+            width: 100%;
 
-    backdrop-filter: blur(12px);
+            max-width: 950px;
 
-    -webkit-backdrop-filter: blur(12px);
+            margin: 0 auto;
+        }
 
-    border: 1px solid rgba(255,255,255,0.18);
+        .experience-container .card {
+            width: 100%;
 
-    border-radius: 22px;
+            padding: 42px;
 
-    padding: 40px;
+            background: rgba(0,0,0,0.55);
 
-    box-shadow:
-        0 25px 60px rgba(0,0,0,0.40);
-}
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
 
-.about-section .card p {
+            border: 1px solid rgba(255,255,255,0.25);
 
-    color: #f3f4f6;
+            border-radius: 22px;
 
-    font-size: 17px;
+            box-shadow:
+                0 25px 60px rgba(0,0,0,0.45);
+        }
 
-    line-height: 1.9;
-}
+        .experience-container .card h3 {
+            color: white;
 
+            font-size: 30px;
 
-/* =====================================================
-   PROFESSIONAL EXPERIENCE
-===================================================== */
+            margin-bottom: 10px;
+        }
 
-.experience-section {
+        .experience-container .card p {
+            color: white;
 
-    position: relative;
+            font-size: 17px;
 
-    min-height: 700px;
+            line-height: 1.8;
+        }
 
-    background-image:
+        .experience-container .card ul {
+            margin-top: 5px;
 
-        linear-gradient(
-            rgba(0,0,0,0.48),
-            rgba(0,0,0,0.74)
-        ),
+            padding-left: 22px;
+        }
 
-        url("292E61D8-D64D-4358-A22D-4BA916015320.JPG");
+        .experience-container .card li {
+            color: #f3f4f6;
 
-    background-size: cover;
+            margin: 12px 0;
 
-    background-position: center center;
+            line-height: 1.7;
 
-    background-repeat: no-repeat;
+            font-size: 16px;
+        }
 
-    display: flex;
 
-    flex-direction: column;
+        /* =====================================================
+           SKILLS
+        ===================================================== */
 
-    justify-content: center;
+        .skills-section {
+            position: relative;
 
-    overflow: hidden;
-}
+            min-height: 700px;
 
-.experience-container {
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,0.40),
+                    rgba(0,0,0,0.72)
+                ),
+                url("skills-bg.png");
 
-    position: relative;
+            background-size: cover;
 
-    z-index: 2;
+            background-position: center center;
 
-    width: 100%;
+            background-repeat: no-repeat;
 
-    max-width: 950px;
+            display: flex;
 
-    margin: 0 auto;
-}
+            flex-direction: column;
 
-.experience-container .card {
+            justify-content: center;
 
-    width: 100%;
+            overflow: hidden;
+        }
 
-    padding: 42px;
+        .skills-section .grid {
+            position: relative;
 
-    background: rgba(0,0,0,0.55);
+            z-index: 2;
 
-    backdrop-filter: blur(12px);
+            width: 100%;
 
-    -webkit-backdrop-filter: blur(12px);
+            max-width: 1100px;
 
-    border: 1px solid rgba(255,255,255,0.25);
+            margin: 0 auto;
 
-    border-radius: 22px;
+            display: grid;
 
-    box-shadow:
-        0 25px 60px rgba(0,0,0,0.45);
-}
+            grid-template-columns:
+                repeat(3, 1fr);
 
-.experience-container .card h3 {
+            gap: 20px;
+        }
 
-    color: white;
+        .skills-section .skill {
+            padding: 25px 20px;
 
-    font-size: 30px;
+            background: rgba(0,0,0,0.45);
 
-    margin-bottom: 10px;
-}
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
 
-.experience-container .card p {
+            border: 1px solid rgba(255,255,255,0.28);
 
-    color: white;
+            border-radius: 16px;
 
-    font-size: 17px;
+            text-align: center;
 
-    line-height: 1.8;
-}
+            color: white;
 
-.experience-container .card ul {
+            font-weight: 600;
 
-    margin-top: 5px;
+            font-size: 16px;
 
-    padding-left: 22px;
-}
+            box-shadow:
+                0 12px 30px rgba(0,0,0,0.35);
 
-.experience-container .card li {
+            transition: 0.3s ease;
+        }
 
-    color: #f3f4f6;
+        .skills-section .skill:hover {
+            transform: translateY(-6px);
 
-    margin: 12px 0;
+            background: rgba(0,0,0,0.65);
 
-    line-height: 1.7;
+            border-color: rgba(255,255,255,0.5);
 
-    font-size: 16px;
-}
+            box-shadow:
+                0 18px 40px rgba(0,0,0,0.5);
+        }
 
 
-/* =====================================================
-   SKILLS
-===================================================== */
+        /* =====================================================
+           EDUCATION
+        ===================================================== */
 
-.skills-section {
+        .education-section {
+            position: relative;
 
-    position: relative;
+            min-height: 650px;
 
-    min-height: 700px;
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,0.45),
+                    rgba(0,0,0,0.75)
+                ),
+                url("education-bg.png");
 
-    background-image:
+            background-size: cover;
 
-        linear-gradient(
-            rgba(0,0,0,0.40),
-            rgba(0,0,0,0.72)
-        ),
+            background-position: center center;
 
-        url("skills-bg.png");
+            background-repeat: no-repeat;
 
-    background-size: cover;
+            display: flex;
 
-    background-position: center center;
+            flex-direction: column;
 
-    background-repeat: no-repeat;
+            justify-content: center;
 
-    display: flex;
+            overflow: hidden;
+        }
 
-    flex-direction: column;
+        .education-card {
+            position: relative;
 
-    justify-content: center;
+            z-index: 2;
 
-    overflow: hidden;
-}
+            width: 100%;
 
-.skills-section .grid {
+            max-width: 900px;
 
-    position: relative;
+            margin: 0 auto;
 
-    z-index: 2;
+            padding: 40px;
 
-    width: 100%;
+            background: rgba(0,0,0,0.52);
 
-    max-width: 1100px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
 
-    margin: 0 auto;
+            border: 1px solid rgba(255,255,255,0.25);
 
-    display: grid;
+            border-radius: 22px;
 
-    grid-template-columns:
-        repeat(3, 1fr);
+            box-shadow:
+                0 25px 60px rgba(0,0,0,0.45);
+        }
 
-    gap: 20px;
-}
+        .education-item {
+            padding: 24px 0;
 
-.skills-section .skill {
+            border-bottom:
+                1px solid rgba(255,255,255,0.18);
+        }
 
-    padding: 25px 20px;
+        .education-item:last-child {
+            border-bottom: none;
 
-    background: rgba(0,0,0,0.45);
+            padding-bottom: 0;
+        }
 
-    backdrop-filter: blur(10px);
+        .education-item h3 {
+            color: white;
 
-    -webkit-backdrop-filter: blur(10px);
+            font-size: 24px;
 
-    border: 1px solid rgba(255,255,255,0.28);
+            margin-bottom: 8px;
+        }
 
-    border-radius: 16px;
+        .education-item p {
+            color: #d1d5db;
 
-    text-align: center;
+            font-size: 16px;
 
-    color: white;
+            line-height: 1.8;
+        }
 
-    font-weight: 600;
 
-    font-size: 16px;
+        /* =====================================================
+           FOOTER / CONTACT
+        ===================================================== */
 
-    box-shadow:
-        0 12px 30px rgba(0,0,0,0.35);
+        footer {
+            padding: 70px 10%;
 
-    transition: 0.3s ease;
-}
+            text-align: center;
 
-.skills-section .skill:hover {
+            background: #161b0d;
 
-    transform: translateY(-6px);
+            color: #ffffff;
 
-    background: rgba(0,0,0,0.65);
+            border-top: 1px solid rgba(255,255,255,0.15);
+        }
 
-    border-color: rgba(255,255,255,0.5);
+        footer h2 {
+            margin-bottom: 25px;
 
-    box-shadow:
-        0 18px 40px rgba(0,0,0,0.5);
-}
+            font-size: 32px;
 
+            font-weight: 700;
 
-/* =====================================================
-   EDUCATION
-===================================================== */
+            color: #ffffff;
+        }
 
-.education-section {
+        footer p {
+            margin: 10px 0;
 
-    position: relative;
+            color: #f1f3e8;
 
-    min-height: 650px;
+            font-size: 16px;
 
-    background-image:
+            line-height: 1.7;
+        }
 
-        linear-gradient(
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.75)
-        ),
 
-        url("education-bg.png");
+        /* =====================================================
+           TABLET
+        ===================================================== */
 
-    background-size: cover;
+        @media (max-width: 900px) {
 
-    background-position: center center;
+            .hero {
+                padding: 80px 7%;
+            }
 
-    background-repeat: no-repeat;
+            .hero h1 {
+                font-size: 55px;
+            }
 
-    display: flex;
+            .skills-section .grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
 
-    flex-direction: column;
+        }
 
-    justify-content: center;
 
-    overflow: hidden;
-}
+        /* =====================================================
+           MOBILE
+        ===================================================== */
 
-.education-card {
+        @media (max-width: 768px) {
 
-    position: relative;
+            section {
+                padding: 70px 7%;
+            }
 
-    z-index: 2;
 
-    width: 100%;
+            /* HERO */
 
-    max-width: 900px;
+            .hero {
+                min-height: 100vh;
 
-    margin: 0 auto;
+                padding: 70px 7%;
 
-    padding: 40px;
+                background-position: center;
+            }
 
-    background: rgba(0,0,0,0.52);
+            .hero h1 {
+                font-size: 46px;
+            }
 
-    backdrop-filter: blur(12px);
+            .hero h2 {
+                font-size: 22px;
+            }
 
-    -webkit-backdrop-filter: blur(12px);
+            .hero p {
+                font-size: 16px;
 
-    border: 1px solid rgba(255,255,255,0.25);
+                line-height: 1.8;
+            }
 
-    border-radius: 22px;
 
-    box-shadow:
-        0 25px 60px rgba(0,0,0,0.45);
-}
+            /* BUTTONS */
 
-.education-item {
+            .buttons {
+                flex-direction: column;
 
-    padding: 24px 0;
+                gap: 15px;
+            }
 
-    border-bottom:
-        1px solid rgba(255,255,255,0.18);
-}
+            .btn {
+                text-align: center;
 
-.education-item:last-child {
+                width: 100%;
+            }
 
-    border-bottom: none;
 
-    padding-bottom: 0;
-}
+            /* TITLES */
 
-.education-item h3 {
+            .title {
+                font-size: 32px;
 
-    color: white;
+                margin-bottom: 30px;
+            }
 
-    font-size: 24px;
 
-    margin-bottom: 8px;
-}
+            /* ABOUT */
 
-.education-item p {
+            .about-section {
+                min-height: auto;
 
-    color: #d1d5db;
+                padding: 80px 7%;
+            }
 
-    font-size: 16px;
+            .about-section .card {
+                padding: 28px 22px;
+            }
 
-    line-height: 1.8;
-}
+            .about-section .card p {
+                font-size: 15px;
 
+                line-height: 1.8;
+            }
 
-/* =====================================================
-   FOOTER / LET'S CONNECT
-===================================================== */
 
-footer {
-    padding: 70px 10%;
+            /* EXPERIENCE */
 
-    text-align: center;
+            .experience-section {
+                min-height: auto;
 
-    background: #161b0d;
+                padding: 80px 7%;
 
-    color: #ffffff;
+                background-position: center center;
+            }
 
-    border-top: 1px solid rgba(255,255,255,0.15);
-}
+            .experience-container .card {
+                padding: 28px 22px;
 
-footer h2 {
-    margin-bottom: 25px;
+                border-radius: 18px;
+            }
 
-    font-size: 32px;
+            .experience-container .card h3 {
+                font-size: 24px;
+            }
 
-    font-weight: 700;
+            .experience-container .card p {
+                font-size: 15px;
+            }
 
-    color: #ffffff;
-}
+            .experience-container .card li {
+                font-size: 15px;
 
-footer p {
-    margin: 10px 0;
+                line-height: 1.8;
 
-    color: #e8eadf;
+                margin: 10px 0;
+            }
 
-    font-size: 16px;
 
-    line-height: 1.7;
-}
+            /* SKILLS */
 
+            .skills-section {
+                min-height: auto;
 
-/* MOBILE */
+                padding: 80px 7%;
 
-@media (max-width: 768px) {
+                background-position: center center;
+            }
 
-    footer {
-        padding: 55px 7%;
-    }
+            .skills-section .grid {
+                grid-template-columns: 1fr;
 
-    footer h2 {
-        font-size: 28px;
-    }
+                gap: 15px;
+            }
 
-    footer p {
-        font-size: 15px;
-    }
+            .skills-section .skill {
+                padding: 20px;
 
-}
+                font-size: 15px;
+            }
 
 
-/* MOBILE */
+            /* EDUCATION */
 
-@media (max-width: 768px) {
+            .education-section {
+                min-height: auto;
 
-    footer {
+                padding: 80px 7%;
 
-        padding: 55px 7%;
-    }
+                background-position: center center;
+            }
 
-    footer h2 {
+            .education-card {
+                padding: 28px 22px;
 
-        font-size: 28px;
-    }
+                border-radius: 18px;
+            }
 
-    footer p {
+            .education-item {
+                padding: 20px 0;
+            }
 
-        font-size: 15px;
-    }
+            .education-item h3 {
+                font-size: 20px;
+            }
 
-}
+            .education-item p {
+                font-size: 15px;
+            }
 
-/* =====================================================
-   TABLET
-===================================================== */
 
-@media (max-width: 900px) {
+            /* FOOTER */
 
-    .hero {
+            footer {
+                padding: 55px 7%;
+            }
 
-        padding: 80px 7%;
-    }
+            footer h2 {
+                font-size: 28px;
+            }
 
-    .hero h1 {
+            footer p {
+                font-size: 15px;
+            }
 
-        font-size: 55px;
-    }
+        }
 
-    .skills-section .grid {
 
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
+        /* =====================================================
+           SMALL MOBILE
+        ===================================================== */
 
-}
+        @media (max-width: 480px) {
 
+            .hero h1 {
+                font-size: 38px;
+            }
 
-/* =====================================================
-   MOBILE
-===================================================== */
+            .hero h2 {
+                font-size: 19px;
+            }
 
-@media (max-width: 768px) {
+            .hero p {
+                font-size: 15px;
+            }
 
-    section {
+            .experience-section,
+            .skills-section,
+            .education-section {
+                padding: 70px 6%;
+            }
 
-        padding: 70px 7%;
-    }
+        }
 
 
-    /* HERO */
+        /* =====================================================
+           LARGE SCREENS
+        ===================================================== */
 
-    .hero {
+        @media (min-width: 1600px) {
 
-        min-height: 100vh;
+            .hero {
+                padding-left: 15%;
+                padding-right: 15%;
+            }
 
-        padding: 70px 7%;
+            section {
+                padding-left: 15%;
+                padding-right: 15%;
+            }
 
-        background-position: center;
-    }
+        }
 
-    .hero h1 {
-
-        font-size: 46px;
-    }
-
-    .hero h2 {
-
-        font-size: 22px;
-    }
-
-    .hero p {
-
-        font-size: 16px;
-
-        line-height: 1.8;
-    }
-
-
-    /* BUTTONS */
-
-    .buttons {
-
-        flex-direction: column;
-
-        gap: 15px;
-    }
-
-    .btn {
-
-        text-align: center;
-
-        width: 100%;
-    }
-
-
-    /* TITLES */
-
-    .title {
-
-        font-size: 32px;
-
-        margin-bottom: 30px;
-    }
-
-
-    /* ABOUT */
-
-    .about-section {
-
-        min-height: auto;
-
-        padding: 80px 7%;
-    }
-
-    .about-section .card {
-
-        padding: 28px 22px;
-    }
-
-    .about-section .card p {
-
-        font-size: 15px;
-
-        line-height: 1.8;
-    }
-
-
-    /* EXPERIENCE */
-
-    .experience-section {
-
-        min-height: auto;
-
-        padding: 80px 7%;
-
-        background-position: center center;
-    }
-
-    .experience-container .card {
-
-        padding: 28px 22px;
-
-        border-radius: 18px;
-    }
-
-    .experience-container .card h3 {
-
-        font-size: 24px;
-    }
-
-    .experience-container .card p {
-
-        font-size: 15px;
-    }
-
-    .experience-container .card li {
-
-        font-size: 15px;
-
-        line-height: 1.8;
-
-        margin: 10px 0;
-    }
-
-
-    /* SKILLS */
-
-    .skills-section {
-
-        min-height: auto;
-
-        padding: 80px 7%;
-
-        background-position: center center;
-    }
-
-    .skills-section .grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-    }
-
-    .skills-section .skill {
-
-        padding: 20px;
-
-        font-size: 15px;
-    }
-
-
-    /* EDUCATION */
-
-    .education-section {
-
-        min-height: auto;
-
-        padding: 80px 7%;
-
-        background-position: center center;
-    }
-
-    .education-card {
-
-        padding: 28px 22px;
-
-        border-radius: 18px;
-    }
-
-    .education-item {
-
-        padding: 20px 0;
-    }
-
-    .education-item h3 {
-
-        font-size: 20px;
-    }
-
-    .education-item p {
-
-        font-size: 15px;
-    }
-
-}
-
-
-/* =====================================================
-   SMALL MOBILE
-===================================================== */
-
-@media (max-width: 480px) {
-
-    .hero h1 {
-
-        font-size: 38px;
-    }
-
-    .hero h2 {
-
-        font-size: 19px;
-    }
-
-    .hero p {
-
-        font-size: 15px;
-    }
-
-    .experience-section,
-    .skills-section,
-    .education-section {
-
-        padding: 70px 6%;
-    }
-
-}
-
-
-/* =====================================================
-   LARGE SCREENS
-===================================================== */
-
-@media (min-width: 1600px) {
-
-    .hero {
-
-        padding-left: 15%;
-
-        padding-right: 15%;
-    }
-
-    section {
-
-        padding-left: 15%;
-
-        padding-right: 15%;
-    }
-
-}
-
-
-/* =====================================================
-   LET'S CONNECT / CONTACT SECTION
-===================================================== */
-
-footer {
-    padding: 70px 10%;
-    text-align: center;
-    background: #161b0d;
-    color: #ffffff;
-    border-top: 1px solid rgba(255,255,255,0.15);
-}
-
-footer h2 {
-    margin-bottom: 25px;
-    font-size: 32px;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-footer p {
-    margin: 10px 0;
-    color: #f1f3e8;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-@media (max-width: 768px) {
-    footer {
-        padding: 55px 7%;
-    }
-
-    footer h2 {
-        font-size: 28px;
-    }
-
-    footer p {
-        font-size: 15px;
-    }
-}
-
-</style>
+    </style>
 
 </head>
 
@@ -916,289 +775,315 @@ footer p {
 <body>
 
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+    <!-- =====================================================
+         HERO
+    ===================================================== -->
 
-<section class="hero">
+    <section class="hero">
 
-    <div class="hero-content">
+        <div class="hero-content">
 
-        <h1>
-            Ishpreet Kaur
-        </h1>
+            <h1>
+                Ishpreet Kaur
+            </h1>
 
-        <h2>
-            Dispatch Executive • Operations Coordinator
-        </h2>
+            <h2>
+                Dispatch Executive • Operations Coordinator
+            </h2>
 
-        <p>
-            Dedicated professional with 3 years of experience at Rai Arts,
-            Mullanpur. Experienced in printing workflow, order coordination,
-            production management, documentation and dispatch support.
-            Looking for an opportunity to grow in the logistics and dispatch
-            industry.
-        </p>
+            <p>
+                Dedicated professional with 3 years of experience at Rai Arts,
+                Mullanpur. Experienced in printing workflow, order coordination,
+                production management, documentation and dispatch support.
+                Looking for an opportunity to grow in the logistics and dispatch
+                industry.
+            </p>
 
 
-        <div class="buttons">
+            <div class="buttons">
 
-            <a href="#" class="btn primary">
-                Download Resume
-            </a>
+                <!-- =================================================
+                     DOWNLOAD RESUME BUTTON
+                     PDF MUST BE IN SAME FOLDER AS THIS HTML FILE
+                ================================================== -->
 
-            <a href="#contact" class="btn secondary">
-                Contact Me
-            </a>
+                <a
+                    href="Ishpreet-Kaur-Resume.pdf"
+                    class="btn primary"
+                    download="Ishpreet-Kaur-Resume.pdf"
+                >
+                    Download Resume
+                </a>
+
+
+                <a
+                    href="#contact"
+                    class="btn secondary"
+                >
+                    Contact Me
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
 
-<!-- =====================================================
-     ABOUT ME
-===================================================== -->
+    <!-- =====================================================
+         ABOUT ME
+    ===================================================== -->
 
-<section class="about-section">
+    <section class="about-section">
 
-    <h2 class="title">
-        About Me
-    </h2>
+        <h2 class="title">
+            About Me
+        </h2>
 
-
-    <div class="card">
-
-        <p>
-
-            I am Ishpreet Kaur, a hardworking and organized professional
-            with three years of experience working at Rai Arts, a printing
-            firm based in Mullanpur.
-
-            <br><br>
-
-            My work has involved handling print-ready designs, coordinating
-            customer orders, assisting production teams, maintaining records,
-            and ensuring timely dispatch of completed jobs.
-
-            <br><br>
-
-            I am now seeking opportunities as a Dispatch Executive where I
-            can apply my organizational skills, communication abilities,
-            and operational experience.
-
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PROFESSIONAL EXPERIENCE
-===================================================== -->
-
-<section class="experience-section">
-
-    <h2 class="title">
-        Professional Experience
-    </h2>
-
-
-    <div class="experience-container">
 
         <div class="card">
 
-            <h3>
-                Graphic Designer
-            </h3>
-
             <p>
 
-                <strong>
-                    Rai Arts, Mullanpur
-                </strong>
+                I am Ishpreet Kaur, a hardworking and organized professional
+                with three years of experience working at Rai Arts, a printing
+                firm based in Mullanpur.
 
-            </p>
+                <br><br>
 
+                My work has involved handling print-ready designs, coordinating
+                customer orders, assisting production teams, maintaining records,
+                and ensuring timely dispatch of completed jobs.
 
-            <br>
+                <br><br>
 
+                I am now seeking opportunities as a Dispatch Executive where I
+                can apply my organizational skills, communication abilities,
+                and operational experience.
 
-            <ul>
-
-                <li>
-                    3 Years of Professional Experience
-                </li>
-
-                <li>
-                    Designed commercial print materials
-                </li>
-
-                <li>
-                    Coordinated production workflow
-                </li>
-
-                <li>
-                    Maintained customer order records
-                </li>
-
-                <li>
-                    Supported dispatch coordination
-                </li>
-
-                <li>
-                    Worked closely with production staff
-                </li>
-
-                <li>
-                    Handled customer communication
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     SKILLS
-===================================================== -->
-
-<section class="skills-section">
-
-    <h2 class="title">
-        Skills
-    </h2>
-
-
-    <div class="grid">
-
-        <div class="skill">
-            Dispatch Coordination
-        </div>
-
-        <div class="skill">
-            Order Management
-        </div>
-
-        <div class="skill">
-            Documentation
-        </div>
-
-        <div class="skill">
-            Adobe Photoshop
-        </div>
-
-        <div class="skill">
-            CorelDRAW
-        </div>
-
-        <div class="skill">
-            Microsoft Word
-        </div>
-
-        <div class="skill">
-            Basic Microsoft Excel
-        </div>
-
-        <div class="skill">
-            Team Collaboration
-        </div>
-
-        <div class="skill">
-            Customer Communication
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     EDUCATION
-===================================================== -->
-
-<section class="education-section">
-
-    <h2 class="title">
-        Education
-    </h2>
-
-
-    <div class="education-card">
-
-
-        <div class="education-item">
-
-            <h3>
-                Bachelor of Arts (B.A.) — Pursuing
-            </h3>
-
-            <p>
-                Lovely Professional University (LPU)
             </p>
 
         </div>
 
+    </section>
 
-        <div class="education-item">
 
-            <h3>
-                Senior Secondary (+2)
-            </h3>
 
-            <p>
-                St. Martha Bethany Vidyalaya, Rurka Kalan
-            </p>
+    <!-- =====================================================
+         PROFESSIONAL EXPERIENCE
+    ===================================================== -->
+
+    <section class="experience-section">
+
+        <h2 class="title">
+            Professional Experience
+        </h2>
+
+
+        <div class="experience-container">
+
+            <div class="card">
+
+                <h3>
+                    Graphic Designer
+                </h3>
+
+                <p>
+
+                    <strong>
+                        Rai Arts, Mullanpur
+                    </strong>
+
+                </p>
+
+
+                <br>
+
+
+                <ul>
+
+                    <li>
+                        3 Years of Professional Experience
+                    </li>
+
+                    <li>
+                        Designed commercial print materials
+                    </li>
+
+                    <li>
+                        Coordinated production workflow
+                    </li>
+
+                    <li>
+                        Maintained customer order records
+                    </li>
+
+                    <li>
+                        Supported dispatch coordination
+                    </li>
+
+                    <li>
+                        Worked closely with production staff
+                    </li>
+
+                    <li>
+                        Handled customer communication
+                    </li>
+
+                </ul>
+
+            </div>
 
         </div>
 
+    </section>
 
-        <div class="education-item">
 
-            <h3>
-                Basic Computer Course
-            </h3>
 
-            <p>
-                Basic Computer Applications and Office Skills
-            </p>
+    <!-- =====================================================
+         SKILLS
+    ===================================================== -->
+
+    <section class="skills-section">
+
+        <h2 class="title">
+            Skills
+        </h2>
+
+
+        <div class="grid">
+
+            <div class="skill">
+                Dispatch Coordination
+            </div>
+
+            <div class="skill">
+                Order Management
+            </div>
+
+            <div class="skill">
+                Documentation
+            </div>
+
+            <div class="skill">
+                Adobe Photoshop
+            </div>
+
+            <div class="skill">
+                CorelDRAW
+            </div>
+
+            <div class="skill">
+                Microsoft Word
+            </div>
+
+            <div class="skill">
+                Basic Microsoft Excel
+            </div>
+
+            <div class="skill">
+                Team Collaboration
+            </div>
+
+            <div class="skill">
+                Customer Communication
+            </div>
 
         </div>
 
-
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =====================================================
-     LET'S CONNECT
-===================================================== -->
 
-<footer id="contact">
+    <!-- =====================================================
+         EDUCATION
+    ===================================================== -->
 
-    <h2>Let's Connect</h2>
+    <section class="education-section">
 
-    <p>📍 Mullanpur, Punjab</p>
+        <h2 class="title">
+            Education
+        </h2>
 
-    <p>📞 +91 9888490322</p>
 
-    <p>📧 ishpreetkaur450@gmail.com</p>
+        <div class="education-card">
 
-    <p>Looking for opportunities as a Dispatch Executive.</p>
 
-</footer>
+            <div class="education-item">
+
+                <h3>
+                    Bachelor of Arts (B.A.) — Pursuing
+                </h3>
+
+                <p>
+                    Lovely Professional University (LPU)
+                </p>
+
+            </div>
+
+
+            <div class="education-item">
+
+                <h3>
+                    Senior Secondary (+2)
+                </h3>
+
+                <p>
+                    St. Martha Bethany Vidyalaya, Rurka Kalan
+                </p>
+
+            </div>
+
+
+            <div class="education-item">
+
+                <h3>
+                    Basic Computer Course
+                </h3>
+
+                <p>
+                    Basic Computer Applications and Office Skills
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         LET'S CONNECT
+    ===================================================== -->
+
+    <footer id="contact">
+
+        <h2>
+            Let's Connect
+        </h2>
+
+        <p>
+            📍 Mullanpur, Punjab
+        </p>
+
+        <p>
+            📞 +91 9888490322
+        </p>
+
+        <p>
+            📧 ishpreetkaur450@gmail.com
+        </p>
+
+        <p>
+            Looking for opportunities as a Dispatch Executive.
+        </p>
+
+    </footer>
+
 
 </body>
+
 </html>
