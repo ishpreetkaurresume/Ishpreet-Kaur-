@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,17 +11,21 @@
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-font-family:'Poppins',sans-serif;
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-background:#0f172a;
-color:white;
+body {
+    background: #0f172a;
+    color: white;
 }
 
 
@@ -28,44 +33,44 @@ color:white;
    HERO SECTION
 ========================= */
 
-.hero{
-height:100vh;
+.hero {
+    min-height: 100vh;
 
-background:
-linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
-url("IMG_4996.jpeg");
+    background:
+        linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)),
+        url("IMG_4996.jpeg");
 
-background-size:cover;
-background-position:center;
+    background-size: cover;
+    background-position: center;
 
-display:flex;
-align-items:center;
+    display: flex;
+    align-items: center;
 
-padding:0 10%;
+    padding: 0 10%;
 }
 
-.hero-content{
-max-width:700px;
+.hero-content {
+    max-width: 700px;
 }
 
-.hero h1{
-font-size:70px;
-font-weight:700;
-line-height:1.1;
+.hero h1 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
-.hero h2{
-margin-top:10px;
-font-size:28px;
-font-weight:500;
-color:#d1d5db;
+.hero h2 {
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #d1d5db;
 }
 
-.hero p{
-margin-top:25px;
-font-size:18px;
-line-height:1.8;
-color:#f3f4f6;
+.hero p {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #f3f4f6;
 }
 
 
@@ -73,32 +78,33 @@ color:#f3f4f6;
    BUTTONS
 ========================= */
 
-.buttons{
-margin-top:35px;
-display:flex;
-gap:20px;
+.buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
 }
 
-.btn{
-padding:15px 35px;
-border-radius:40px;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
+.btn {
+    padding: 15px 35px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+    display: inline-block;
 }
 
-.primary{
-background:#f59e0b;
-color:black;
+.primary {
+    background: #f59e0b;
+    color: black;
 }
 
-.secondary{
-border:2px solid white;
-color:white;
+.secondary {
+    border: 2px solid white;
+    color: white;
 }
 
-.btn:hover{
-transform:translateY(-3px);
+.btn:hover {
+    transform: translateY(-3px);
 }
 
 
@@ -106,14 +112,14 @@ transform:translateY(-3px);
    GENERAL SECTIONS
 ========================= */
 
-section{
-padding:90px 10%;
+section {
+    padding: 90px 10%;
 }
 
-.title{
-font-size:40px;
-margin-bottom:40px;
-text-align:center;
+.title {
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 
@@ -121,29 +127,29 @@ text-align:center;
    CARDS
 ========================= */
 
-.card{
-background:rgba(255,255,255,.08);
+.card {
+    background: rgba(255,255,255,.08);
 
-backdrop-filter:blur(16px);
--webkit-backdrop-filter:blur(16px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 
-border:1px solid rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.1);
 
-border-radius:20px;
+    border-radius: 20px;
 
-padding:35px;
+    padding: 35px;
 
-margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
-.card h3{
-margin-bottom:15px;
-font-size:26px;
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 26px;
 }
 
-.card p{
-line-height:1.9;
-color:#d6d6d6;
+.card p {
+    line-height: 1.9;
+    color: #d6d6d6;
 }
 
 
@@ -151,58 +157,51 @@ color:#d6d6d6;
    ABOUT ME SECTION
 ========================= */
 
-.about-section{
+.about-section {
+    position: relative;
 
-position:relative;
+    background:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.70)
+        ),
+        url("about-bg.JPG");
 
-background:
-linear-gradient(
-rgba(0,0,0,.55),
-rgba(0,0,0,.70)
-),
-url("about-bg.JPG");
-
-background-size:cover;
-
-background-position:center;
-
-background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.about-section .title{
-position:relative;
-z-index:2;
-color:white;
+.about-section .title {
+    position: relative;
+    z-index: 2;
+    color: white;
 }
 
-.about-section .card{
+.about-section .card {
+    position: relative;
+    z-index: 2;
 
-position:relative;
-z-index:2;
+    max-width: 900px;
 
-max-width:900px;
+    margin: 0 auto;
 
-margin:0 auto;
+    background: rgba(0,0,0,.48);
 
-background:rgba(0,0,0,.48);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
-backdrop-filter:blur(12px);
--webkit-backdrop-filter:blur(12px);
+    border: 1px solid rgba(255,255,255,.18);
 
-border:1px solid rgba(255,255,255,.18);
+    border-radius: 20px;
 
-border-radius:20px;
-
-padding:35px;
+    padding: 35px;
 }
 
-.about-section .card p{
-
-color:#f3f4f6;
-
-font-size:17px;
-
-line-height:1.9;
+.about-section .card p {
+    color: #f3f4f6;
+    font-size: 17px;
+    line-height: 1.9;
 }
 
 
@@ -210,79 +209,117 @@ line-height:1.9;
    PROFESSIONAL EXPERIENCE
 ========================= */
 
-.experience-section{
+.experience-section {
+    position: relative;
 
-position:relative;
+    background:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.72)
+        ),
+        url("292E61D8-D64D-4358-A22D-4BA916015320.jpeg");
 
-background:
-linear-gradient(
-rgba(0,0,0,.55),
-rgba(0,0,0,.72)
-),
-url("292E61D8-D64D-4358-A22D-4BA916015320.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-background-size:cover;
-
-background-position:center;
-
-background-repeat:no-repeat;
-
-overflow:hidden;
+    overflow: hidden;
 }
 
-.experience-section .title{
-
-position:relative;
-
-z-index:2;
-
-color:white;
+.experience-section .title {
+    position: relative;
+    z-index: 2;
+    color: white;
 }
 
-.experience-section .card{
 
-position:relative;
+/* EXPERIENCE CONTAINER */
 
-z-index:2;
+.experience-container {
+    position: relative;
+    z-index: 2;
 
-max-width:900px;
+    max-width: 1100px;
 
-margin:0 auto;
+    margin: 0 auto;
 
-background:rgba(0,0,0,.45);
+    display: grid;
 
-backdrop-filter:blur(12px);
+    grid-template-columns: 1fr 1fr;
 
--webkit-backdrop-filter:blur(12px);
+    gap: 35px;
 
-border:1px solid rgba(255,255,255,.18);
-
-border-radius:20px;
-
-padding:35px;
+    align-items: center;
 }
 
-.experience-section .card h3{
 
-color:white;
+/* EXPERIENCE IMAGE */
 
-margin-bottom:15px;
+.experience-image {
+    width: 100%;
+    height: 450px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,.18);
+
+    box-shadow: 0 20px 50px rgba(0,0,0,.45);
 }
 
-.experience-section .card p{
+.experience-image img {
+    width: 100%;
+    height: 100%;
 
-color:#f3f4f6;
+    object-fit: cover;
 
-line-height:1.9;
+    display: block;
+
+    transition: .5s;
 }
 
-.experience-section .card li{
+.experience-image:hover img {
+    transform: scale(1.04);
+}
 
-color:#f3f4f6;
 
-margin:10px 0;
+/* EXPERIENCE CARD */
 
-line-height:1.7;
+.experience-container .card {
+    margin: 0;
+
+    max-width: none;
+
+    background: rgba(0,0,0,.45);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,.18);
+
+    border-radius: 20px;
+
+    padding: 35px;
+}
+
+.experience-container .card h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.experience-container .card p {
+    color: #f3f4f6;
+    line-height: 1.9;
+}
+
+.experience-container .card li {
+    color: #f3f4f6;
+
+    margin: 10px 0;
+
+    line-height: 1.7;
 }
 
 
@@ -290,22 +327,70 @@ line-height:1.7;
    SKILLS
 ========================= */
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+.grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
 }
 
-.skill{
-padding:20px;
+.skill {
+    padding: 20px;
 
-background:rgba(255,255,255,.07);
+    background: rgba(255,255,255,.07);
 
-border-radius:15px;
+    border-radius: 15px;
 
-text-align:center;
+    text-align: center;
 
-font-weight:600;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+
+    background: rgba(255,255,255,.12);
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-section {
+    background: #111827;
+}
+
+.education-card {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    background: rgba(255,255,255,.08);
+
+    backdrop-filter: blur(16px);
+
+    -webkit-backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    border-radius: 20px;
+
+    padding: 35px;
+}
+
+.education-card h3 {
+    margin-bottom: 10px;
+}
+
+.education-card p {
+    color: #d1d5db;
+
+    line-height: 1.8;
 }
 
 
@@ -313,21 +398,22 @@ font-weight:600;
    FOOTER
 ========================= */
 
-footer{
-padding:60px 10%;
+footer {
+    padding: 60px 10%;
 
-text-align:center;
+    text-align: center;
 
-background:#020617;
+    background: #020617;
 }
 
-footer h2{
-margin-bottom:20px;
+footer h2 {
+    margin-bottom: 20px;
 }
 
-footer p{
-margin:8px 0;
-color:#d1d5db;
+footer p {
+    margin: 8px 0;
+
+    color: #d1d5db;
 }
 
 
@@ -335,58 +421,129 @@ color:#d1d5db;
    MOBILE
 ========================= */
 
-@media(max-width:768px){
+@media(max-width: 768px) {
 
-.hero h1{
-font-size:46px;
+    .hero {
+        padding: 80px 7%;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+
+    /* ABOUT */
+
+    .about-section {
+        padding: 70px 7%;
+
+        background-position: center center;
+    }
+
+    .about-section .card {
+        padding: 28px 22px;
+    }
+
+    .about-section .card p {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience-section {
+        padding: 70px 7%;
+
+        background-position: center center;
+    }
+
+    .experience-container {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .experience-image {
+        height: 320px;
+    }
+
+    .experience-container .card {
+        padding: 28px 22px;
+    }
+
+    .experience-container .card p,
+    .experience-container .card li {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+
+    /* SKILLS */
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* EDUCATION */
+
+    .education-card {
+        padding: 28px 22px;
+    }
+
 }
 
-.hero h2{
-font-size:22px;
-}
 
-.buttons{
-flex-direction:column;
-}
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
 
-.title{
-font-size:32px;
-}
+@media(max-width: 480px) {
 
-.about-section{
-padding:70px 7%;
-background-position:center center;
-}
+    .hero h1 {
+        font-size: 38px;
+    }
 
-.about-section .card{
-padding:28px 22px;
-}
+    .hero h2 {
+        font-size: 19px;
+    }
 
-.about-section .card p{
-font-size:15px;
-line-height:1.8;
-}
+    .hero p {
+        font-size: 15px;
+    }
 
-.experience-section{
-padding:70px 7%;
-background-position:center center;
-}
-
-.experience-section .card{
-padding:28px 22px;
-}
-
-.experience-section .card p,
-.experience-section .card li{
-font-size:15px;
-line-height:1.8;
-}
+    .experience-image {
+        height: 260px;
+    }
 
 }
 
 </style>
-
 </head>
+
 
 <body>
 
@@ -397,30 +554,35 @@ line-height:1.8;
 
 <section class="hero">
 
-<div class="hero-content">
+    <div class="hero-content">
 
-<h1>Ishpreet Kaur</h1>
+        <h1>Ishpreet Kaur</h1>
 
-<h2>Dispatch Executive • Operations Coordinator</h2>
+        <h2>
+            Dispatch Executive • Operations Coordinator
+        </h2>
 
-<p>
+        <p>
+            Dedicated professional with 3 years of experience at Rai Arts,
+            Mullanpur. Experienced in printing workflow, order coordination,
+            production management, documentation and dispatch support.
+            Looking for an opportunity to grow in the logistics and dispatch
+            industry.
+        </p>
 
-Dedicated professional with 3 years of experience at Rai Arts, Mullanpur.
-Experienced in printing workflow, order coordination, production management,
-documentation and dispatch support. Looking for an opportunity to grow
-in the logistics and dispatch industry.
+        <div class="buttons">
 
-</p>
+            <a href="#" class="btn primary">
+                Download Resume
+            </a>
 
-<div class="buttons">
+            <a href="#contact" class="btn secondary">
+                Contact Me
+            </a>
 
-<a href="#" class="btn primary">Download Resume</a>
+        </div>
 
-<a href="#contact" class="btn secondary">Contact Me</a>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
@@ -431,29 +593,33 @@ in the logistics and dispatch industry.
 
 <section class="about-section">
 
-<h2 class="title">About Me</h2>
+    <h2 class="title">
+        About Me
+    </h2>
 
-<div class="card">
+    <div class="card">
 
-<p>
+        <p>
 
-I am Ishpreet Kaur, a hardworking and organized professional with three years
-of experience working at Rai Arts, a printing firm based in Mullanpur.
+            I am Ishpreet Kaur, a hardworking and organized professional
+            with three years of experience working at Rai Arts, a printing
+            firm based in Mullanpur.
 
-<br><br>
+            <br><br>
 
-My work has involved handling print-ready designs, coordinating customer
-orders, assisting production teams, maintaining records, and ensuring
-timely dispatch of completed jobs.
+            My work has involved handling print-ready designs, coordinating
+            customer orders, assisting production teams, maintaining records,
+            and ensuring timely dispatch of completed jobs.
 
-<br><br>
+            <br><br>
 
-I am now seeking opportunities as a Dispatch Executive where I can apply
-my organizational skills, communication abilities, and operational experience.
+            I am now seeking opportunities as a Dispatch Executive where I
+            can apply my organizational skills, communication abilities,
+            and operational experience.
 
-</p>
+        </p>
 
-</div>
+    </div>
 
 </section>
 
@@ -464,35 +630,75 @@ my organizational skills, communication abilities, and operational experience.
 
 <section class="experience-section">
 
-<h2 class="title">Professional Experience</h2>
+    <h2 class="title">
+        Professional Experience
+    </h2>
 
-<div class="card">
 
-<h3>Graphic Designer</h3>
+    <div class="experience-container">
 
-<p><strong>Rai Arts, Mullanpur</strong></p>
 
-<br>
+        <!-- IMAGE -->
 
-<ul>
+        <div class="experience-image">
 
-<li>3 Years of Professional Experience</li>
+            <img
+                src="292E61D8-D64D-4358-A22D-4BA916015320.jpeg"
+                alt="Ishpreet Kaur Professional Experience"
+            >
 
-<li>Designed commercial print materials</li>
+        </div>
 
-<li>Coordinated production workflow</li>
 
-<li>Maintained customer order records</li>
+        <!-- EXPERIENCE DETAILS -->
 
-<li>Supported dispatch coordination</li>
+        <div class="card">
 
-<li>Worked closely with production staff</li>
+            <h3>
+                Graphic Designer
+            </h3>
 
-<li>Handled customer communication</li>
+            <p>
+                <strong>Rai Arts, Mullanpur</strong>
+            </p>
 
-</ul>
+            <br>
 
-</div>
+            <ul>
+
+                <li>
+                    3 Years of Professional Experience
+                </li>
+
+                <li>
+                    Designed commercial print materials
+                </li>
+
+                <li>
+                    Coordinated production workflow
+                </li>
+
+                <li>
+                    Maintained customer order records
+                </li>
+
+                <li>
+                    Supported dispatch coordination
+                </li>
+
+                <li>
+                    Worked closely with production staff
+                </li>
+
+                <li>
+                    Handled customer communication
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -503,29 +709,49 @@ my organizational skills, communication abilities, and operational experience.
 
 <section>
 
-<h2 class="title">Skills</h2>
+    <h2 class="title">
+        Skills
+    </h2>
 
-<div class="grid">
+    <div class="grid">
 
-<div class="skill">Dispatch Coordination</div>
+        <div class="skill">
+            Dispatch Coordination
+        </div>
 
-<div class="skill">Order Management</div>
+        <div class="skill">
+            Order Management
+        </div>
 
-<div class="skill">Documentation</div>
+        <div class="skill">
+            Documentation
+        </div>
 
-<div class="skill">Adobe Photoshop</div>
+        <div class="skill">
+            Adobe Photoshop
+        </div>
 
-<div class="skill">CorelDRAW</div>
+        <div class="skill">
+            CorelDRAW
+        </div>
 
-<div class="skill">Microsoft Word</div>
+        <div class="skill">
+            Microsoft Word
+        </div>
 
-<div class="skill">Basic Microsoft Excel</div>
+        <div class="skill">
+            Basic Microsoft Excel
+        </div>
 
-<div class="skill">Team Collaboration</div>
+        <div class="skill">
+            Team Collaboration
+        </div>
 
-<div class="skill">Customer Communication</div>
+        <div class="skill">
+            Customer Communication
+        </div>
 
-</div>
+    </div>
 
 </section>
 
@@ -534,23 +760,43 @@ my organizational skills, communication abilities, and operational experience.
      EDUCATION
 ========================= -->
 
-<section>
+<section class="education-section">
 
-<h2 class="title">Education</h2>
+    <h2 class="title">
+        Education
+    </h2>
 
-<div class="card">
+    <div class="education-card">
 
-<h3>Bachelor of Arts (Pursuing)</h3>
+        <h3>
+            Bachelor of Arts (Pursuing)
+        </h3>
 
-<p>Lovely Professional University (LPU)</p>
+        <p>
+            Lovely Professional University (LPU)
+        </p>
 
-<br>
+        <br><br>
 
-<h3>Senior Secondary (+2)</h3>
+        <h3>
+            Senior Secondary (+2)
+        </h3>
 
-<p>St. Martha Bethany Vidyalaya, Rurka Kalan</p>
+        <p>
+            St. Martha Bethany Vidyalaya, Rurka Kalan
+        </p>
 
-</div>
+        <br><br>
+
+        <h3>
+            Basic Computer Course
+        </h3>
+
+        <p>
+            Basic computer operations, documentation and office applications.
+        </p>
+
+    </div>
 
 </section>
 
@@ -561,18 +807,46 @@ my organizational skills, communication abilities, and operational experience.
 
 <footer id="contact">
 
-<h2>Let's Connect</h2>
+    <h2>
+        Let's Connect
+    </h2>
 
-<p>📍 Mullanpur, Punjab</p>
+    <p>
+        📍 Mullanpur, Punjab
+    </p>
 
-<p>📞 +91 9888490322</p>
+    <p>
+        📞 +91 9888490322
+    </p>
 
-<p>📧 ishpreetkaur450@gmail.com</p>
+    <p>
+        📧 ishpreetkaur450@gmail.com
+    </p>
 
-<p>Looking for opportunities as a Dispatch Executive.</p>
+    <p>
+        Looking for opportunities as a Dispatch Executive.
+    </p>
 
 </footer>
 
 
 </body>
 </html>
+```
+
+### 📁 Keep these files together
+
+Your GitHub repository/folder should contain:
+
+```text
+📁 Your Website
+│
+├── index.html
+├── IMG_4996.jpeg
+├── about-bg.JPG
+└── 292E61D8-D64D-4358-A22D-4BA916015320.jpeg
+```
+
+The **292E61...jpeg** image now appears as a proper large professional image beside your experience details, and the section also uses it as its background.
+
+**One important correction:** your original HTML displayed your email address, while your earlier resume information indicated you wanted the email removed. If this website is intended to match that resume, I would remove the email from the footer as well.
